@@ -36,7 +36,7 @@ RUN /usr/bin/wget \
     /usr/bin/unzip -q /tmp/pdi-ce-${PDI_VERSION}.zip -d  $PENTAHO_HOME && \
     rm /tmp/pdi-ce-${PDI_VERSION}.zip
 
-USER root
+USER 0
 
 RUN apt-get update && apt-get install -y libgtk2.0-0 xauth x11-apps
 
