@@ -59,7 +59,7 @@ RUN echo "Asia/Hong_Kong" > /etc/timezone
 
 RUN dpkg-reconfigure -f noninteractive tzdata
 
-USER pentaho
+USER 999
 
 RUN curl -L -o $PENTAHO_HOME/data-integration/lib/mysql-connector-java-5.1.40.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar
 # We can only add KETTLE_HOME to the PATH variable now
