@@ -26,7 +26,7 @@ RUN chown -R pentaho:pentaho $PENTAHO_HOME && \
  chmod +x $PENTAHO_HOME/scripts/docker-entrypoint.sh
 
 # Switch to the pentaho user
-USER pentaho
+USER 999
 
 # Download PDI
 RUN /usr/bin/wget \
